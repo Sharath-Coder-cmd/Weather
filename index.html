@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div id="city">
+        <input id="search" placeholder="Enter The City...." type="text" >
+        
+        <button type="submit" id="btn" onclick="searchcity()">Search</button>
+        <hr>
+        <div>
+            <span id="name">City</span>
+        </div>
+        <div id="info">
+        <span id="temp">0</span><span>°F</span>
+        
+     <p id="climate">Type</p>
+    </div>
+    </div>
+
+    <div id="detail">
+        <div id="forms">
+            <div class="mi">
+                <label >Min-Temp : </label>
+                <span id="min">0</span><span>°F</span>
+             </div>     
+       
+            <br>
+            <div class="mi">
+            <label for="max">Max-Temp :</label> 
+            <span id="max">0</span><span>°F</span>
+           </div>
+            <br>
+            <div class="mi">
+                <label for="gust">Feel-like :</label>  
+                <span id="gust">0</span><span>°F</span>
+            </div>
+            <br>
+            <div class="mi">
+            <label for="deg">wind Deg :</label>
+              <span id="deg">0</span><span>%</span>
+            </div>
+           
+            
+            
+            
+            <br>
+            <div class="mi">
+            <label for="wind">Wind Speed :</label> 
+             <span id="wind">0</span><span>km/h</span>
+             </div>
+            
+            
+            </div>
+        
+    </div>
+</body>
+</html>

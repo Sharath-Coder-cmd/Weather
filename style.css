@@ -1,0 +1,123 @@
+body {
+  background-color: rgb(53, 62, 77);
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  body {
+    flex-direction: row;
+  }
+}
+
+#city {
+  margin: 20px;
+  background-color: rgb(138, 217, 222);
+  padding: 30px;
+  height: auto;
+  min-height: 200px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+input {
+  height: 28px;
+  margin-bottom: 4px;
+  margin-right: 6px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: calc(100% - 85px);
+  max-width: 200px;
+}
+
+input[type="text"] {
+  font-weight: bold;
+  padding: 6px;
+  font-size: 16px;
+}
+
+button {
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(34, 229, 164, 0.67);
+}
+
+button[type="submit"] {
+  font-size: 14px;
+  padding: 2px;
+  font-weight: lighter;
+}
+
+button:hover {
+  color: whitesmoke;
+  background-color: rgba(10, 155, 106, 0.766);
+}
+
+#info {
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#temp {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#info p {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+#detail {
+  background-color: rgb(33, 40, 50);
+  margin: 20px;
+  padding: 30px;
+  height: auto;
+  min-height: 190px;
+  width: 100%;
+  max-width: 330px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: italic;
+}
+
+#forms {
+  color: white;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.mi {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#name {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  text-align: center;
+}
+
+/* Remove the fixed left margins and use flex layout instead */
+#min, #max, #deg, #gust, #wind {
+  margin-left: 0;
+}
